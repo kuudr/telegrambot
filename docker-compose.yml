@@ -3,6 +3,7 @@ version: '3.7'
 
 services:
   composer:
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Docker/composer/Dockerfile
